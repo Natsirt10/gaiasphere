@@ -21,13 +21,13 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PINE_LEAVES = registerBlock("pine_leaves",
             () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
-                    .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.GRASS)));
+                    .strength(0.5f).sound(SoundType.GRASS)));
     public static final DeferredBlock<Block> GREEN_ASPEN_LEAVES = registerBlock("green_aspen_leaves",
             () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
-                    .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.GRASS)));
+                    .strength(0.5f).sound(SoundType.GRASS)));
     public static final DeferredBlock<Block> YELLOW_ASPEN_LEAVES = registerBlock("yellow_aspen_leaves",
             () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
-                    .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.GRASS)));
+                    .strength(0.5f).sound(SoundType.GRASS)));
 
     public static final DeferredBlock<Block> PINE_WOOD = registerBlock("pine_wood",
             () -> new Block(BlockBehaviour.Properties.of() .strength(1f) .sound(SoundType.WOOD)));
