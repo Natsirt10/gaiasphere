@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gaiasphere:pine_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "gaiasphere:pine_planks"
+  }
+}
