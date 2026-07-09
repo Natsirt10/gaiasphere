@@ -1,6 +1,7 @@
 package net.loonlord32.gaiasphere.datagen;
 
 import net.loonlord32.gaiasphere.Gaiasphere;
+import net.loonlord32.gaiasphere.block.ModBlocks;
 import net.loonlord32.gaiasphere.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -16,5 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SARDINE.get());
         basicItem(ModItems.PINE_SAPLING.get());
 
+        this.simpleBlockItem(ModBlocks.PINE_LOG.getId());
+        this.simpleBlockItem(ModBlocks.PINE_WOOD.getId());
+        this.simpleBlockItem(ModBlocks.ASPEN_LOG.getId());
+        this.simpleBlockItem(ModBlocks.ASPEN_WOOD.getId());
     }
 }

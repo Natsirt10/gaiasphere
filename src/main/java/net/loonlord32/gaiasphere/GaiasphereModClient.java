@@ -1,6 +1,9 @@
 package net.loonlord32.gaiasphere;
 
+import net.loonlord32.gaiasphere.block.ModBlocks;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -24,8 +27,19 @@ public class GaiasphereModClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
+        registerBlockRenderers();
+
         // Some client setup code
         Gaiasphere.LOGGER.info("HELLO FROM CLIENT SETUP");
         Gaiasphere.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+    }
+
+    //This is the same as setting the cutout in the block model itself
+    @SuppressWarnings("deprecation")
+    public static void registerBlockRenderers() {
+        //Blocks
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_ASPEN_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_ASPEN_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINE_LEAVES.get(), RenderType.cutout());
     }
 }
