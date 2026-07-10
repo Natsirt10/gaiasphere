@@ -23,8 +23,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ASPEN_LOG.get())
                 .add(ModBlocks.PINE_WOOD.get())
                 .add(ModBlocks.ASPEN_WOOD.get())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get())
+                .add(ModBlocks.STRIPPED_ASPEN_LOG.get())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get())
+                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get())
                 .add(ModBlocks.PINE_PLANKS.get())
                 .add(ModBlocks.ASPEN_PLANKS.get());
 
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.PINE_FENCE.get());
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.ASPEN_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.PINE_FENCE_GATE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ASPEN_FENCE_GATE.get());
     }
 }

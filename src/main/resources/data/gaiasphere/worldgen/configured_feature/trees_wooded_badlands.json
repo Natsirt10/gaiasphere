@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "gaiasphere:pine",
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": "gaiasphere:sandy_pine"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "gaiasphere:block/aspen_log_one"
+    "end": "gaiasphere:block/aspen_log_one",
+    "side": "gaiasphere:block/aspen_log_one"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "gaiasphere:block/aspen_planks",
+    "side": "gaiasphere:block/aspen_planks",
+    "top": "gaiasphere:block/aspen_planks"
+  }
+}

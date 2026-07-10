@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "gaiasphere:block/stripped_pine_log",
+    "side": "gaiasphere:block/stripped_pine_log"
+  }
+}

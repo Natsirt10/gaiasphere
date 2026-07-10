@@ -4,6 +4,10 @@
     "gaiasphere:aspen_log",
     "gaiasphere:pine_wood",
     "gaiasphere:aspen_wood",
+    "gaiasphere:stripped_pine_log",
+    "gaiasphere:stripped_aspen_log",
+    "gaiasphere:stripped_pine_wood",
+    "gaiasphere:stripped_aspen_wood",
     "gaiasphere:pine_planks",
     "gaiasphere:aspen_planks"
   ]

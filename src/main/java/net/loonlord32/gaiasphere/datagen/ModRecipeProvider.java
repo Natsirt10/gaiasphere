@@ -6,6 +6,7 @@ import net.loonlord32.gaiasphere.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,6 +32,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINE_PLANKS.get(), 4)
                 .requires(PINE_LOG)
                 .unlockedBy(getHasName(PINE_LOG),has(PINE_LOG)).save(recipeOutput);
+// not ready for this yet, the rest are the exact same as stairs
+//        stairBuilder(ModBlocks.PINE_STAIRS.get(), Ingredient.of(ModBlocks.PINE_PLANKS)).group('pine_planks')
+//                .unlockedBy("has_pine_planks". has(ModBlocks.PINE_PLANKS)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_SLAB.get(), ModBlocks.PINE_PLANKS.get());
 
 // hey loon, this is just a template/example for when we do smth with a shaped recipe :) PART 2!
 //        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINE_PLANKS.get(), 64)

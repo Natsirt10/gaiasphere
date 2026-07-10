@@ -41,8 +41,16 @@ public class ModBlocks {
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final DeferredBlock<Block> STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    //TODO: Change the map color
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     //TODO: Change colors if you want, they are map colors, what you see in a item map
     public static final DeferredBlock<Block> PINE_LOG = registerBlock("pine_log",
+            () -> log(MapColor.COLOR_BROWN, MapColor.TERRACOTTA_BROWN));
+    public static final DeferredBlock<Block> STRIPPED_PINE_LOG = registerBlock("stripped_pine_log",
             () -> log(MapColor.COLOR_BROWN, MapColor.TERRACOTTA_BROWN));
     public static final DeferredBlock<Block> PINE_PLANKS = registerBlock("pine_planks",
             () -> new Block(BlockBehaviour.Properties.of() .strength(1f) .sound(SoundType.WOOD)));
@@ -57,8 +65,16 @@ public class ModBlocks {
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final DeferredBlock<Block> STRIPPED_ASPEN_WOOD = registerBlock("stripped_aspen_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    //TODO: Change the map color
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     //TODO: Change colors if you want, they are map colors, what you see in a item map
     public static final DeferredBlock<Block> ASPEN_LOG = registerBlock("aspen_log",
+            () -> log(MapColor.COLOR_BROWN, MapColor.TERRACOTTA_BROWN));
+    public static final DeferredBlock<Block> STRIPPED_ASPEN_LOG = registerBlock("stripped_aspen_log",
             () -> log(MapColor.COLOR_BROWN, MapColor.TERRACOTTA_BROWN));
 
 
@@ -76,9 +92,16 @@ public class ModBlocks {
     public static final DeferredBlock<StairBlock> PINE_STAIRS = registerBlock("pine_stairs",
             () -> new StairBlock(ModBlocks.PINE_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD)));
+    public static final DeferredBlock<SlabBlock> PINE_SLAB = registerBlock("pine_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD)));
 
     public static final DeferredBlock<PressurePlateBlock> PINE_PRESSURE_PLATE = registerBlock("pine_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
+    public static final DeferredBlock<ButtonBlock> PINE_BUTTON = registerBlock("pine_button",
+            () -> new ButtonBlock(BlockSetType.SPRUCE, 20,BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD).noCollission()));
+
+    public static final DeferredBlock<FenceBlock> PINE_FENCE = registerBlock("pine_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
     public static final DeferredBlock<FenceGateBlock> PINE_FENCE_GATE = registerBlock("pine_fence_gate",
             () -> new FenceGateBlock(WoodType.SPRUCE, BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
 
@@ -87,6 +110,30 @@ public class ModBlocks {
 
     public static final DeferredBlock<TrapDoorBlock> PINE_TRAPDOOR = registerBlock("pine_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD).noOcclusion()));
+
+
+    public static final DeferredBlock<StairBlock> ASPEN_STAIRS = registerBlock("aspen_stairs",
+            () -> new StairBlock(ModBlocks.ASPEN_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD)));
+    public static final DeferredBlock<SlabBlock> ASPEN_SLAB = registerBlock("aspen_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD)));
+
+    public static final DeferredBlock<PressurePlateBlock> ASPEN_PRESSURE_PLATE = registerBlock("aspen_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
+    public static final DeferredBlock<ButtonBlock> ASPEN_BUTTON = registerBlock("aspen_button",
+            () -> new ButtonBlock(BlockSetType.SPRUCE, 20,BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD).noCollission()));
+
+    public static final DeferredBlock<FenceBlock> ASPEN_FENCE = registerBlock("aspen_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
+    public static final DeferredBlock<FenceGateBlock> ASPEN_FENCE_GATE = registerBlock("aspen_fence_gate",
+            () -> new FenceGateBlock(WoodType.SPRUCE, BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD)));
+
+    public static final DeferredBlock<DoorBlock> ASPEN_DOOR = registerBlock("aspen_door",
+            () -> new DoorBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.of().strength(1f).sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<TrapDoorBlock> ASPEN_TRAPDOOR = registerBlock("aspen_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.SPRUCE, BlockBehaviour.Properties.of().strength(1f) .sound(SoundType.WOOD).noOcclusion()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> Block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, Block);
