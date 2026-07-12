@@ -4,7 +4,11 @@
     "default": "minecraft:spruce_checked",
     "features": [
       {
-        "chance": 0.05,
+        "chance": 0.25,
+        "feature": "gaiasphere:podzol_spruce"
+      },
+      {
+        "chance": 0.1,
         "feature": "gaiasphere:pine"
       }
     ]

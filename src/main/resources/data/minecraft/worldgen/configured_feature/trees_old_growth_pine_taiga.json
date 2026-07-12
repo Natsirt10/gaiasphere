@@ -6,6 +6,14 @@
       {
         "chance": 0.45,
         "feature": "minecraft:mega_pine_checked"
+      },
+      {
+        "chance": 0.05,
+        "feature": "gaiasphere:podzol_spruce"
+      },
+      {
+        "chance": 0.05,
+        "feature": "minecraft:spruce_checked"
       }
     ]
   }

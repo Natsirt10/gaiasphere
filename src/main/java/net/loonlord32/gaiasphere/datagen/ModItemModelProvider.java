@@ -18,6 +18,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.SARDINE.get());
         basicItem(ModItems.PINE_SAPLING.get());
+        basicItem(ModItems.GRAPES.get());
+        basicItem(ModItems.OLIVES.get());
 
         this.simpleBlockItem(ModBlocks.PINE_LOG.getId());
         this.simpleBlockItem(ModBlocks.PINE_WOOD.getId());

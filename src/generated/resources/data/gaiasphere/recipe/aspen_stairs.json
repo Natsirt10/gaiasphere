@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "aspen_planks",
+  "key": {
+    "#": {
+      "item": "gaiasphere:aspen_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "gaiasphere:aspen_stairs"
+  }
+}

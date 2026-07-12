@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "pine_planks",
+  "ingredients": [
+    {
+      "item": "gaiasphere:pine_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gaiasphere:pine_button"
+  }
+}

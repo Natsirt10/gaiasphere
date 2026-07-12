@@ -1,15 +1,12 @@
 {
-  "feature": "gaiasphere:pine",
+  "feature": "gaiasphere:sandy_pine",
   "placement": [
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:cactus",
-          "Properties": {
-            "stage": "0"
-          }
+          "Name": "minecraft:cactus"
         }
       }
     }

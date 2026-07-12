@@ -4,8 +4,16 @@
     "default": "gaiasphere:pine",
     "features": [
       {
-        "chance": 0.5,
+        "chance": 0.2,
         "feature": "gaiasphere:sandy_pine"
+      },
+      {
+        "chance": 0.1,
+        "feature": "minecraft:oak_checked"
+      },
+      {
+        "chance": 0.1,
+        "feature": "gaiasphere:coarse_dirt_pine"
       }
     ]
   }

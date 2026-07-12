@@ -48,6 +48,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ASPEN_TRAPDOOR);
                         output.accept(ModBlocks.ASPEN_PRESSURE_PLATE );
                         output.accept(ModBlocks.ASPEN_BUTTON );
+                        output.accept(ModItems.GRAPES);
+                        output.accept(ModItems.OLIVES);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -11,6 +11,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> SARDINE = ITEMS.register("sardine",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GRAPES = ITEMS.register("grapes",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.GRAPES)));
+    public static final DeferredItem<Item> OLIVES = ITEMS.register("olives",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.OLIVES)));
     public static final DeferredItem<Item> PINE_SAPLING = ITEMS.register("pine_sapling",
             () -> new Item(new Item.Properties()));
 

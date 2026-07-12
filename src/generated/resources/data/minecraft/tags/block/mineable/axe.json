@@ -1,14 +1,30 @@
 {
   "values": [
     "gaiasphere:pine_log",
-    "gaiasphere:aspen_log",
     "gaiasphere:pine_wood",
-    "gaiasphere:aspen_wood",
     "gaiasphere:stripped_pine_log",
-    "gaiasphere:stripped_aspen_log",
     "gaiasphere:stripped_pine_wood",
-    "gaiasphere:stripped_aspen_wood",
     "gaiasphere:pine_planks",
-    "gaiasphere:aspen_planks"
+    "gaiasphere:pine_stairs",
+    "gaiasphere:pine_slab",
+    "gaiasphere:pine_button",
+    "gaiasphere:pine_fence",
+    "gaiasphere:pine_fence_gate",
+    "gaiasphere:pine_pressure_plate",
+    "gaiasphere:pine_door",
+    "gaiasphere:pine_trapdoor",
+    "gaiasphere:aspen_log",
+    "gaiasphere:aspen_wood",
+    "gaiasphere:stripped_aspen_log",
+    "gaiasphere:stripped_aspen_wood",
+    "gaiasphere:aspen_planks",
+    "gaiasphere:aspen_stairs",
+    "gaiasphere:aspen_slab",
+    "gaiasphere:aspen_button",
+    "gaiasphere:aspen_fence",
+    "gaiasphere:aspen_fence_gate",
+    "gaiasphere:aspen_pressure_plate",
+    "gaiasphere:aspen_door",
+    "gaiasphere:aspen_trapdoor"
   ]
 }

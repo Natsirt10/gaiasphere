@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pine_planks",
+  "key": {
+    "#": {
+      "item": "gaiasphere:pine_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "gaiasphere:pine_trapdoor"
+  }
+}
